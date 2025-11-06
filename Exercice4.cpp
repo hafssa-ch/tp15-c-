@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <vector>
 #include <stdexcept> 
@@ -10,13 +9,11 @@ private:
     vector<T> elements; 
 
 public:
-   
     void empiler(const T& element) {
         elements.push_back(element);
         cout << element << " empilé." << endl;
     }
 
-   
     T depiler() {
         if (estVide())
             throw runtime_error("Erreur : tentative de dépiler une pile vide !");
@@ -26,31 +23,26 @@ public:
         return sommetElement;
     }
 
-   
     T sommet() const {
         if (estVide())
             throw runtime_error("Erreur : la pile est vide, pas de sommet !");
         return elements.back();
     }
 
-    
     bool estVide() const {
         return elements.empty();
     }
 
-   
     int taille() const {
         return elements.size();
     }
 
-   
     void inverser() {
         int n = elements.size();
         for (int i = 0; i < n / 2; ++i)
             swap(elements[i], elements[n - i - 1]);
         cout << "Pile inversée." << endl;
     }
-
 
     void afficher() const {
         cout << "Pile (haut -> bas) : ";
@@ -93,9 +85,9 @@ int main() {
         pileDouble.depiler();
         pileDouble.afficher();
 
-        cout << "\n=== Test d’exception ===" << endl;
+        cout << "\n=== Test d'exception ===" << endl;
         Pile<int> pileVide;
-        pileVide.depiler(); 
+        pileVide.depiler();  
 
     } catch (const runtime_error& e) {
         cerr << e.what() << endl;
