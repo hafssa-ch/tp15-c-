@@ -89,6 +89,7 @@ Chaque case du tableau contient une **liste chaînée de paires (clé, valeur)**
 | `supprimer(int cle)` | Supprime une clé de la table |
 | `afficher()` | Affiche le contenu de toutes les cases |
 | `redimensionner(int nouvelleTaille)` | *(Optionnel)* agrandit la table |
+<img width="522" height="627" alt="image" src="https://github.com/user-attachments/assets/caaa7697-9542-43c0-9717-fedefef21f28" />
 
 
 # Exercice 4 : Pile Générique avec Template
@@ -111,3 +112,4 @@ afficher()	Affiche la pile du haut vers le bas
 
 ## Gestion d’erreur :
 Lève une exception runtime_error si on tente de dépiler une pile vide.
+<img width="700" height="629" alt="image" src="https://github.com/user-attachments/assets/d8eb20e6-4b73-4308-8d9b-56ac3536faef" />
